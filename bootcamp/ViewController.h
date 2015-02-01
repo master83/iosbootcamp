@@ -10,6 +10,5 @@
 
 @interface ViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>
 
-
 @end
 
