@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4CCC9EC9-4FAB-4D85-ACA5-567C5A1E14F0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>bootcamp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F9FF8695DE70A68C11D1B1076FD1FCE6FF054611</key>
+		<string>github.com:master83/iosbootcamp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>bootcamp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F9FF8695DE70A68C11D1B1076FD1FCE6FF054611</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:master83/iosbootcamp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F9FF8695DE70A68C11D1B1076FD1FCE6FF054611</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F9FF8695DE70A68C11D1B1076FD1FCE6FF054611</string>
+			<key>IDESourceControlWCCName</key>
+			<string>bootcamp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
