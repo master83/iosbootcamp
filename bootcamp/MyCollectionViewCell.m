@@ -10,9 +10,15 @@
 
 @implementation MyCollectionViewCell
 
--(void) LoadCell:(NSString *)title withSubTitle:(NSString *)subTitle {
+-(void) LoadCell:(NSString *)title withSubTitle:(NSString *)subTitle withLeftImage:(NSString *)leftImage withRightImage:(NSString *)rightImage {
     self.titleLabel.text = title;
+    self.titleLabel.font = [UIFont fontWithName:@"font1.ttf" size:16];
+    
     self.subTitleLabel.text = subTitle;
+    self.subTitleLabel.font = [UIFont fontWithName:@"font2.otf" size:14];
+    
+    self.leftImageView.image = [UIImage imageNamed:leftImage];
+    self.rightImageView.image = [UIImage imageNamed:rightImage];
 }
 
 @end

@@ -12,6 +12,9 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UILabel *subTitleLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *leftImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *rightImageView;
 
--(void) LoadCell:(NSString *)title withSubTitle:(NSString *)subTitle;
+-(void) LoadCell:(NSString *)title withSubTitle:(NSString *)subTitle
+   withLeftImage:(NSString *)leftImage withRightImage:(NSString *)rightImage;
 @end

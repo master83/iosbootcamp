@@ -10,11 +10,20 @@
 		E76DD3B61A79D1BC00CC7042 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E76DD3B51A79D1BC00CC7042 /* main.m */; };
 		E76DD3B91A79D1BC00CC7042 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E76DD3B81A79D1BC00CC7042 /* AppDelegate.m */; };
 		E76DD3BC1A79D1BC00CC7042 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E76DD3BB1A79D1BC00CC7042 /* ViewController.m */; };
-		E76DD3BF1A79D1BC00CC7042 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E76DD3BD1A79D1BC00CC7042 /* Main.storyboard */; };
 		E76DD3C11A79D1BC00CC7042 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E76DD3C01A79D1BC00CC7042 /* Images.xcassets */; };
-		E76DD3C41A79D1BC00CC7042 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76DD3C21A79D1BC00CC7042 /* LaunchScreen.xib */; };
 		E76DD3D01A79D1BC00CC7042 /* bootcampTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E76DD3CF1A79D1BC00CC7042 /* bootcampTests.m */; };
 		E76DD3FD1A7E0D6900CC7042 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E76DD3FC1A7E0D6900CC7042 /* MyCollectionViewCell.m */; };
+		E76DD4021A7E13F700CC7042 /* CellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E76DD4011A7E13F700CC7042 /* CellItem.m */; };
+		E76DD4051A7E159000CC7042 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = E76DD4041A7E159000CC7042 /* apple.png */; };
+		E76DD4071A7E15CB00CC7042 /* apple1.png in Resources */ = {isa = PBXBuildFile; fileRef = E76DD4061A7E15CB00CC7042 /* apple1.png */; };
+		E76DD40A1A7E179200CC7042 /* grapes.png in Resources */ = {isa = PBXBuildFile; fileRef = E76DD4081A7E179200CC7042 /* grapes.png */; };
+		E76DD40B1A7E179200CC7042 /* grapes1.png in Resources */ = {isa = PBXBuildFile; fileRef = E76DD4091A7E179200CC7042 /* grapes1.png */; };
+		E76DD4101A7E182000CC7042 /* chicken.png in Resources */ = {isa = PBXBuildFile; fileRef = E76DD40C1A7E182000CC7042 /* chicken.png */; };
+		E76DD4111A7E182000CC7042 /* chicken1.png in Resources */ = {isa = PBXBuildFile; fileRef = E76DD40D1A7E182000CC7042 /* chicken1.png */; };
+		E76DD4121A7E182000CC7042 /* peach.png in Resources */ = {isa = PBXBuildFile; fileRef = E76DD40E1A7E182000CC7042 /* peach.png */; };
+		E76DD4131A7E182000CC7042 /* peach1.png in Resources */ = {isa = PBXBuildFile; fileRef = E76DD40F1A7E182000CC7042 /* peach1.png */; };
+		E76DD41F1A7E1CCD00CC7042 /* font1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E76DD41D1A7E1A1A00CC7042 /* font1.ttf */; };
+		E76DD4201A7E1CCD00CC7042 /* font2.otf in Resources */ = {isa = PBXBuildFile; fileRef = E76DD41C1A7E19C000CC7042 /* font2.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +52,18 @@
 		E76DD3CF1A79D1BC00CC7042 /* bootcampTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bootcampTests.m; sourceTree = "<group>"; };
 		E76DD3FB1A7E0D6900CC7042 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
 		E76DD3FC1A7E0D6900CC7042 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
+		E76DD4001A7E13F700CC7042 /* CellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellItem.h; sourceTree = "<group>"; };
+		E76DD4011A7E13F700CC7042 /* CellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellItem.m; sourceTree = "<group>"; };
+		E76DD4041A7E159000CC7042 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		E76DD4061A7E15CB00CC7042 /* apple1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple1.png; sourceTree = "<group>"; };
+		E76DD4081A7E179200CC7042 /* grapes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grapes.png; sourceTree = "<group>"; };
+		E76DD4091A7E179200CC7042 /* grapes1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grapes1.png; sourceTree = "<group>"; };
+		E76DD40C1A7E182000CC7042 /* chicken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chicken.png; sourceTree = "<group>"; };
+		E76DD40D1A7E182000CC7042 /* chicken1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chicken1.png; sourceTree = "<group>"; };
+		E76DD40E1A7E182000CC7042 /* peach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peach.png; sourceTree = "<group>"; };
+		E76DD40F1A7E182000CC7042 /* peach1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peach1.png; sourceTree = "<group>"; };
+		E76DD41C1A7E19C000CC7042 /* font2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = font2.otf; sourceTree = "<group>"; };
+		E76DD41D1A7E1A1A00CC7042 /* font1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = font1.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +105,7 @@
 		E76DD3B21A79D1BC00CC7042 /* bootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				E76DD41E1A7E1A7400CC7042 /* Resources */,
 				E76DD3F11A7DF2CB00CC7042 /* CollectionViewCells */,
 				E76DD3E41A7A787E00CC7042 /* helpers */,
 				E76DD3B71A79D1BC00CC7042 /* AppDelegate.h */,
@@ -127,6 +149,8 @@
 		E76DD3E41A7A787E00CC7042 /* helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E76DD4001A7E13F700CC7042 /* CellItem.h */,
+				E76DD4011A7E13F700CC7042 /* CellItem.m */,
 			);
 			name = helpers;
 			sourceTree = "<group>";
@@ -138,6 +162,39 @@
 				E76DD3FC1A7E0D6900CC7042 /* MyCollectionViewCell.m */,
 			);
 			name = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		E76DD4031A7E153E00CC7042 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E76DD4061A7E15CB00CC7042 /* apple1.png */,
+				E76DD40C1A7E182000CC7042 /* chicken.png */,
+				E76DD40D1A7E182000CC7042 /* chicken1.png */,
+				E76DD40E1A7E182000CC7042 /* peach.png */,
+				E76DD40F1A7E182000CC7042 /* peach1.png */,
+				E76DD4081A7E179200CC7042 /* grapes.png */,
+				E76DD4091A7E179200CC7042 /* grapes1.png */,
+				E76DD4041A7E159000CC7042 /* apple.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		E76DD4171A7E18FD00CC7042 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E76DD41C1A7E19C000CC7042 /* font2.otf */,
+				E76DD41D1A7E1A1A00CC7042 /* font1.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		E76DD41E1A7E1A7400CC7042 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E76DD4171A7E18FD00CC7042 /* fonts */,
+				E76DD4031A7E153E00CC7042 /* images */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,9 +277,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E76DD3BF1A79D1BC00CC7042 /* Main.storyboard in Resources */,
-				E76DD3C41A79D1BC00CC7042 /* LaunchScreen.xib in Resources */,
+				E76DD41F1A7E1CCD00CC7042 /* font1.ttf in Resources */,
+				E76DD4201A7E1CCD00CC7042 /* font2.otf in Resources */,
+				E76DD4121A7E182000CC7042 /* peach.png in Resources */,
+				E76DD40A1A7E179200CC7042 /* grapes.png in Resources */,
+				E76DD4111A7E182000CC7042 /* chicken1.png in Resources */,
+				E76DD4101A7E182000CC7042 /* chicken.png in Resources */,
+				E76DD4051A7E159000CC7042 /* apple.png in Resources */,
+				E76DD4071A7E15CB00CC7042 /* apple1.png in Resources */,
 				E76DD3C11A79D1BC00CC7042 /* Images.xcassets in Resources */,
+				E76DD4131A7E182000CC7042 /* peach1.png in Resources */,
+				E76DD40B1A7E179200CC7042 /* grapes1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +307,7 @@
 			files = (
 				E76DD3BC1A79D1BC00CC7042 /* ViewController.m in Sources */,
 				E76DD3B91A79D1BC00CC7042 /* AppDelegate.m in Sources */,
+				E76DD4021A7E13F700CC7042 /* CellItem.m in Sources */,
 				E76DD3FD1A7E0D6900CC7042 /* MyCollectionViewCell.m in Sources */,
 				E76DD3B61A79D1BC00CC7042 /* main.m in Sources */,
 			);
