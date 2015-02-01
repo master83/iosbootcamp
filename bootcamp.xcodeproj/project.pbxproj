@@ -25,6 +25,8 @@
 		E76DD41F1A7E1CCD00CC7042 /* font1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E76DD41D1A7E1A1A00CC7042 /* font1.ttf */; };
 		E76DD4201A7E1CCD00CC7042 /* font2.otf in Resources */ = {isa = PBXBuildFile; fileRef = E76DD41C1A7E19C000CC7042 /* font2.otf */; };
 		E76DD4261A7EAE4A00CC7042 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E76DD4251A7EAE4A00CC7042 /* DataManager.m */; };
+		E76DD4291A7EB88F00CC7042 /* BlogCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E76DD4281A7EB88F00CC7042 /* BlogCellItem.m */; };
+		E76DD42F1A7EBEF600CC7042 /* PostsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E76DD42E1A7EBEF600CC7042 /* PostsCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,10 @@
 		E76DD41D1A7E1A1A00CC7042 /* font1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = font1.ttf; sourceTree = "<group>"; };
 		E76DD4241A7EAE4A00CC7042 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		E76DD4251A7EAE4A00CC7042 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		E76DD4271A7EB88F00CC7042 /* BlogCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogCellItem.h; sourceTree = "<group>"; };
+		E76DD4281A7EB88F00CC7042 /* BlogCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogCellItem.m; sourceTree = "<group>"; };
+		E76DD42D1A7EBEF600CC7042 /* PostsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostsCollectionViewCell.h; sourceTree = "<group>"; };
+		E76DD42E1A7EBEF600CC7042 /* PostsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostsCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +162,8 @@
 				E76DD4011A7E13F700CC7042 /* CellItem.m */,
 				E76DD4241A7EAE4A00CC7042 /* DataManager.h */,
 				E76DD4251A7EAE4A00CC7042 /* DataManager.m */,
+				E76DD4271A7EB88F00CC7042 /* BlogCellItem.h */,
+				E76DD4281A7EB88F00CC7042 /* BlogCellItem.m */,
 			);
 			name = helpers;
 			sourceTree = "<group>";
@@ -165,6 +173,8 @@
 			children = (
 				E76DD3FB1A7E0D6900CC7042 /* MyCollectionViewCell.h */,
 				E76DD3FC1A7E0D6900CC7042 /* MyCollectionViewCell.m */,
+				E76DD42D1A7EBEF600CC7042 /* PostsCollectionViewCell.h */,
+				E76DD42E1A7EBEF600CC7042 /* PostsCollectionViewCell.m */,
 			);
 			name = CollectionViewCells;
 			sourceTree = "<group>";
@@ -314,8 +324,10 @@
 				E76DD4261A7EAE4A00CC7042 /* DataManager.m in Sources */,
 				E76DD3B91A79D1BC00CC7042 /* AppDelegate.m in Sources */,
 				E76DD4021A7E13F700CC7042 /* CellItem.m in Sources */,
+				E76DD42F1A7EBEF600CC7042 /* PostsCollectionViewCell.m in Sources */,
 				E76DD3FD1A7E0D6900CC7042 /* MyCollectionViewCell.m in Sources */,
 				E76DD3B61A79D1BC00CC7042 /* main.m in Sources */,
+				E76DD4291A7EB88F00CC7042 /* BlogCellItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
