@@ -24,6 +24,7 @@
 		E76DD4131A7E182000CC7042 /* peach1.png in Resources */ = {isa = PBXBuildFile; fileRef = E76DD40F1A7E182000CC7042 /* peach1.png */; };
 		E76DD41F1A7E1CCD00CC7042 /* font1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E76DD41D1A7E1A1A00CC7042 /* font1.ttf */; };
 		E76DD4201A7E1CCD00CC7042 /* font2.otf in Resources */ = {isa = PBXBuildFile; fileRef = E76DD41C1A7E19C000CC7042 /* font2.otf */; };
+		E76DD4261A7EAE4A00CC7042 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E76DD4251A7EAE4A00CC7042 /* DataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		E76DD40F1A7E182000CC7042 /* peach1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peach1.png; sourceTree = "<group>"; };
 		E76DD41C1A7E19C000CC7042 /* font2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = font2.otf; sourceTree = "<group>"; };
 		E76DD41D1A7E1A1A00CC7042 /* font1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = font1.ttf; sourceTree = "<group>"; };
+		E76DD4241A7EAE4A00CC7042 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		E76DD4251A7EAE4A00CC7042 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +154,8 @@
 			children = (
 				E76DD4001A7E13F700CC7042 /* CellItem.h */,
 				E76DD4011A7E13F700CC7042 /* CellItem.m */,
+				E76DD4241A7EAE4A00CC7042 /* DataManager.h */,
+				E76DD4251A7EAE4A00CC7042 /* DataManager.m */,
 			);
 			name = helpers;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E76DD3BC1A79D1BC00CC7042 /* ViewController.m in Sources */,
+				E76DD4261A7EAE4A00CC7042 /* DataManager.m in Sources */,
 				E76DD3B91A79D1BC00CC7042 /* AppDelegate.m in Sources */,
 				E76DD4021A7E13F700CC7042 /* CellItem.m in Sources */,
 				E76DD3FD1A7E0D6900CC7042 /* MyCollectionViewCell.m in Sources */,
