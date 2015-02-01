@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -108,15 +109,15 @@
                                                 <exclude reference="sKC-Hu-Kva"/>
                                             </mask>
                                             <mask key="constraints">
+                                                <exclude reference="Dya-Hg-CCV"/>
+                                                <exclude reference="i6q-pt-Upy"/>
+                                                <exclude reference="Rz0-j8-1qL"/>
+                                                <exclude reference="wPH-zf-jMq"/>
                                                 <exclude reference="G5e-7v-S6W"/>
                                                 <exclude reference="GhK-CP-00n"/>
                                                 <exclude reference="SOe-RV-MLI"/>
                                                 <exclude reference="Zcg-Gu-u8M"/>
                                                 <exclude reference="zgH-tS-L9Q"/>
-                                                <exclude reference="Dya-Hg-CCV"/>
-                                                <exclude reference="i6q-pt-Upy"/>
-                                                <exclude reference="Rz0-j8-1qL"/>
-                                                <exclude reference="wPH-zf-jMq"/>
                                                 <exclude reference="68K-S0-c0Q"/>
                                                 <exclude reference="cUl-Ca-y0r"/>
                                             </mask>
@@ -129,15 +130,15 @@
                                                 <include reference="sKC-Hu-Kva"/>
                                             </mask>
                                             <mask key="constraints">
+                                                <include reference="Dya-Hg-CCV"/>
+                                                <include reference="i6q-pt-Upy"/>
+                                                <include reference="Rz0-j8-1qL"/>
+                                                <include reference="wPH-zf-jMq"/>
                                                 <exclude reference="G5e-7v-S6W"/>
                                                 <exclude reference="GhK-CP-00n"/>
                                                 <include reference="SOe-RV-MLI"/>
                                                 <exclude reference="Zcg-Gu-u8M"/>
                                                 <include reference="zgH-tS-L9Q"/>
-                                                <include reference="Dya-Hg-CCV"/>
-                                                <include reference="i6q-pt-Upy"/>
-                                                <include reference="Rz0-j8-1qL"/>
-                                                <include reference="wPH-zf-jMq"/>
                                                 <include reference="68K-S0-c0Q"/>
                                                 <include reference="cUl-Ca-y0r"/>
                                             </mask>
@@ -152,6 +153,9 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="103" y="15" width="113" height="20.5"/>
+                                            </variation>
                                         </label>
                                     </subviews>
                                     <constraints>
@@ -199,10 +203,10 @@
                                 <exclude reference="yI0-x0-hiI"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="L7X-AF-kot"/>
                                 <exclude reference="Imu-46-K9H"/>
                                 <exclude reference="NRC-fT-tOg"/>
                                 <exclude reference="gjF-fZ-adH"/>
-                                <exclude reference="L7X-AF-kot"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -210,10 +214,10 @@
                                 <include reference="yI0-x0-hiI"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="L7X-AF-kot"/>
                                 <include reference="Imu-46-K9H"/>
                                 <include reference="NRC-fT-tOg"/>
                                 <include reference="gjF-fZ-adH"/>
-                                <include reference="L7X-AF-kot"/>
                             </mask>
                         </variation>
                     </view>

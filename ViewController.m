@@ -10,10 +10,13 @@
 #import "MyCollectionViewCell.h"
 
 @interface ViewController ()
-    @property (strong, nonatomic) 
+    @property (strong, nonatomic) IBOutlet NSMutableArray *items;
+    @property (strong, nonatomic) IBOutlet UICollectionView *myCollectionView;
+
 @end
 
 @implementation ViewController {
+
 
 }
 
@@ -21,14 +24,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    items = [[NSMutableArray alloc]init];
+    self.items = [[NSMutableArray alloc]init];
     
-    [items addObject:@"Apple"];
-    [items addObject:@"Banana"];
-    [items addObject:@"Chicken"];
-    [items addObject:@"Grapes"];
-    [items addObject:@"Lemon "];
-    [items addObject:@":)"];
+    [self.myCollectionView setDataSource:self];
+    [self.myCollectionView setDelegate:self];
+    
+    [self.items addObject:@"Apple"];
+    [self.items addObject:@"Banana"];
+    [self.items addObject:@"Chicken"];
+    [self.items addObject:@"Grapes"];
+    [self.items addObject:@"Lemon "];
+    [self.items addObject:@":)"];
     
 }
 
@@ -44,14 +50,16 @@
 }
 
 - (NSInteger) collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return items.count;
+    return self.items.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     
-    UILabel *label = (UILabel *)[cell viewWithTag:100];
-    label.text = [items objectAtIndex:indexPath.row];
+    NSString *title = self.items[indexPath.row];
+    
+    MyCollectionViewCell *cell = (MyCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    [cell LoadCell:title withSubTitle:title];
+    
     
     return cell;
 }

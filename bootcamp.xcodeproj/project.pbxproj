@@ -14,7 +14,7 @@
 		E76DD3C11A79D1BC00CC7042 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E76DD3C01A79D1BC00CC7042 /* Images.xcassets */; };
 		E76DD3C41A79D1BC00CC7042 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76DD3C21A79D1BC00CC7042 /* LaunchScreen.xib */; };
 		E76DD3D01A79D1BC00CC7042 /* bootcampTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E76DD3CF1A79D1BC00CC7042 /* bootcampTests.m */; };
-		E76DD3F41A7DF34300CC7042 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E76DD3F31A7DF34300CC7042 /* CollectionViewCell.m */; };
+		E76DD3FD1A7E0D6900CC7042 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E76DD3FC1A7E0D6900CC7042 /* MyCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +41,8 @@
 		E76DD3C91A79D1BC00CC7042 /* bootcampTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bootcampTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E76DD3CE1A79D1BC00CC7042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E76DD3CF1A79D1BC00CC7042 /* bootcampTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bootcampTests.m; sourceTree = "<group>"; };
-		E76DD3F21A7DF34300CC7042 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
-		E76DD3F31A7DF34300CC7042 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		E76DD3FB1A7E0D6900CC7042 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
+		E76DD3FC1A7E0D6900CC7042 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +134,8 @@
 		E76DD3F11A7DF2CB00CC7042 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				E76DD3F21A7DF34300CC7042 /* CollectionViewCell.h */,
-				E76DD3F31A7DF34300CC7042 /* CollectionViewCell.m */,
+				E76DD3FB1A7E0D6900CC7042 /* MyCollectionViewCell.h */,
+				E76DD3FC1A7E0D6900CC7042 /* MyCollectionViewCell.m */,
 			);
 			name = CollectionViewCells;
 			sourceTree = "<group>";
@@ -240,9 +240,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E76DD3F41A7DF34300CC7042 /* CollectionViewCell.m in Sources */,
 				E76DD3BC1A79D1BC00CC7042 /* ViewController.m in Sources */,
 				E76DD3B91A79D1BC00CC7042 /* AppDelegate.m in Sources */,
+				E76DD3FD1A7E0D6900CC7042 /* MyCollectionViewCell.m in Sources */,
 				E76DD3B61A79D1BC00CC7042 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +434,7 @@
 				E76DD3D51A79D1BC00CC7042 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E76DD3D61A79D1BC00CC7042 /* Build configuration list for PBXNativeTarget "bootcampTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +443,7 @@
 				E76DD3D81A79D1BC00CC7042 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
