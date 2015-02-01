@@ -53,10 +53,31 @@
     [item4 setLeftImagePath:@"peach"];
     [item4 setRightImagePath:@"peach1"];
     
+    CellItem *item5 = [[CellItem alloc] init];
+    [item5 setTitle:@"Peach"];
+    [item5 setSubTitle:@"Good for Health"];
+    [item5 setLeftImagePath:@"peach"];
+    [item5 setRightImagePath:@"peach1"];
+    
+    CellItem *item6 = [[CellItem alloc] init];
+    [item6 setTitle:@"Peach"];
+    [item6 setSubTitle:@"Good for Health"];
+    [item6 setLeftImagePath:@"peach"];
+    [item6 setRightImagePath:@"peach1"];
+    
+    CellItem *item7 = [[CellItem alloc] init];
+    [item7 setTitle:@"Peach"];
+    [item7 setSubTitle:@"Good for Health"];
+    [item7 setLeftImagePath:@"peach"];
+    [item7 setRightImagePath:@"peach1"];
+    
     [self.items addObject:item1];
     [self.items addObject:item2];
     [self.items addObject:item3];
     [self.items addObject:item4];
+    [self.items addObject:item5];
+    [self.items addObject:item6];
+    [self.items addObject:item7];
     
 }
 
