@@ -72,18 +72,18 @@
     [item7 setLeftImagePath:@"peach"];
     [item7 setRightImagePath:@"peach1"];
     
-//    [self.items addObject:item1];
-//    [self.items addObject:item2];
-//    [self.items addObject:item3];
-//    [self.items addObject:item4];
-//    [self.items addObject:item5];
-//    [self.items addObject:item6];
-//    [self.items addObject:item7];
+    [self.items addObject:item1];
+    [self.items addObject:item2];
+    [self.items addObject:item3];
+    [self.items addObject:item4];
+    [self.items addObject:item5];
+    [self.items addObject:item6];
+    [self.items addObject:item7];
 
 
     
-    DataManager *dataManager = [[DataManager alloc] init];
-    NSArray *items1 = [dataManager downloadData];
+//    DataManager *dataManager = [[DataManager alloc] init];
+//    NSArray *items1 = [dataManager downloadData];
 }
 
 - (void)didReceiveMemoryWarning {

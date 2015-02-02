@@ -27,6 +27,7 @@
 		E76DD4261A7EAE4A00CC7042 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E76DD4251A7EAE4A00CC7042 /* DataManager.m */; };
 		E76DD4291A7EB88F00CC7042 /* BlogCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E76DD4281A7EB88F00CC7042 /* BlogCellItem.m */; };
 		E76DD42F1A7EBEF600CC7042 /* PostsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E76DD42E1A7EBEF600CC7042 /* PostsCollectionViewCell.m */; };
+		E76DD4321A7F15AA00CC7042 /* PostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E76DD4311A7F15AA00CC7042 /* PostsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		E76DD4281A7EB88F00CC7042 /* BlogCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogCellItem.m; sourceTree = "<group>"; };
 		E76DD42D1A7EBEF600CC7042 /* PostsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostsCollectionViewCell.h; sourceTree = "<group>"; };
 		E76DD42E1A7EBEF600CC7042 /* PostsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostsCollectionViewCell.m; sourceTree = "<group>"; };
+		E76DD4301A7F15AA00CC7042 /* PostsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostsViewController.h; sourceTree = "<group>"; };
+		E76DD4311A7F15AA00CC7042 /* PostsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 				E76DD3C01A79D1BC00CC7042 /* Images.xcassets */,
 				E76DD3C21A79D1BC00CC7042 /* LaunchScreen.xib */,
 				E76DD3B31A79D1BC00CC7042 /* Supporting Files */,
+				E76DD4301A7F15AA00CC7042 /* PostsViewController.h */,
+				E76DD4311A7F15AA00CC7042 /* PostsViewController.m */,
 			);
 			path = bootcamp;
 			sourceTree = "<group>";
@@ -325,6 +330,7 @@
 				E76DD3B91A79D1BC00CC7042 /* AppDelegate.m in Sources */,
 				E76DD4021A7E13F700CC7042 /* CellItem.m in Sources */,
 				E76DD42F1A7EBEF600CC7042 /* PostsCollectionViewCell.m in Sources */,
+				E76DD4321A7F15AA00CC7042 /* PostsViewController.m in Sources */,
 				E76DD3FD1A7E0D6900CC7042 /* MyCollectionViewCell.m in Sources */,
 				E76DD3B61A79D1BC00CC7042 /* main.m in Sources */,
 				E76DD4291A7EB88F00CC7042 /* BlogCellItem.m in Sources */,

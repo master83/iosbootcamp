@@ -14,7 +14,7 @@
 @synthesize content;
 @synthesize blogDate;
 @synthesize authorName;
-@synthesize blogDescription;
+@synthesize authorDescription;
 @synthesize tags;
 
 @end

@@ -7,10 +7,11 @@
 //
 
 #import "DataManager.h"
+#import "BlogCellItem.h"
 
 @interface DataManager()
 
--(NSArray *) parseJson:(NSArray *) data;
+-(NSArray *) parseJson:(NSDictionary *) data;
 
 @end
 
@@ -18,7 +19,7 @@
 @implementation DataManager
 
 -(NSArray *)downloadData {
-    NSArray *json = [[NSArray alloc]init];
+    NSDictionary *json = [[NSDictionary alloc]init];
     
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://data.nasa.gov/api/get_search_results/?search=carbon+cycle"]];
     
@@ -39,14 +40,51 @@
     return [self parseJson:json];
 }
 
--(NSArray *) parseJson:(NSArray *)jsonData  {
+-(NSArray *) parseJson:(NSDictionary *)jsonData  {
     NSMutableArray *finalData = [[NSMutableArray alloc] init];
+    
+    self.totalPosts = (int)[jsonData objectForKey:@"count"];
     
     for (NSDictionary *data in jsonData) {
         
-        self.totalPosts = (int)[data objectForKey:@"count"];
+        NSArray *posts = [data objectForKey:@"posts"];
         
-
+        if (posts.count > 0) {
+            
+            for (NSDictionary *post in posts) {
+                
+                BlogCellItem *blogCell = [[BlogCellItem alloc] init];
+                blogCell.title = [post objectForKey:@"title"];
+                
+                NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+                [dateFormatter setDateFormat:@"EE, d LLLL yyyy HH:mm:ss Z"];
+                
+                blogCell.blogDate = [dateFormatter dateFromString:[post objectForKey:@"date"]];
+                blogCell.content = [post objectForKey:@"content"];
+                
+                NSArray *tags = [post objectForKey:@"tags"];
+                if (tags.count > 0) {
+                    NSMutableArray *tags = [[NSMutableArray alloc] init];
+                    for (NSDictionary *tag in tags) {
+                        [tags addObject:[tag objectForKey:@"key"]];
+                    }
+                    blogCell.tags = tags;
+                }
+                
+                NSDictionary *author = [[NSDictionary alloc] init];
+                author = [post objectForKey:@"author"];
+                
+                if (author) {
+                    blogCell.authorName = [author objectForKey:@"name"];
+                    blogCell.authorDescription = [author objectForKey:@"description"];
+                }
+                
+                [finalData addObject:blogCell];
+                
+            }
+            
+        }
+        
     }
     
     

@@ -12,9 +12,9 @@
 
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) NSString *content;
-@property (strong, nonatomic) NSDate *blogDate;
+@property (strong, nonatomic) NSString *blogDate;
 @property (strong, nonatomic) NSString *authorName;
-@property (strong, nonatomic) NSString *blogDescription;
+@property (strong, nonatomic) NSString *authorDescription;
 @property (strong, nonatomic) NSArray *tags;
 
 @end
