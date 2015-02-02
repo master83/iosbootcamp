@@ -10,9 +10,4 @@
 
 @implementation CellItem
 
-@synthesize title;
-@synthesize subTitle;
-@synthesize leftImagePath;
-@synthesize rightImagePath;
-
 @end

@@ -10,11 +10,4 @@
 
 @implementation BlogCellItem
 
-@synthesize title;
-@synthesize content;
-@synthesize blogDate;
-@synthesize authorName;
-@synthesize authorDescription;
-@synthesize tags;
-
 @end

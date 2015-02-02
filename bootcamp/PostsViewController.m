@@ -11,10 +11,11 @@
 #import "PostsCollectionViewCell.h"
 #import "BlogCellItem.h"
 
-@interface PostsViewController ()
+@interface PostsViewController ()<DataManagerDelegate>
 
 @property (strong, nonatomic) IBOutlet NSArray *posts;
 @property (strong, nonatomic) IBOutlet UICollectionView *postsCollectionView;
+@property (strong, nonatomic) DataManager *dataManager;
 
 @end
 
@@ -29,9 +30,9 @@
     [self.postsCollectionView setDataSource:self];
     [self.postsCollectionView setDelegate:self];
     
-    DataManager *dataManager = [[DataManager alloc] init];
-    self.posts = [dataManager downloadData];
-    
+    self.dataManager = [[DataManager alloc] init];
+    self.dataManager.dataManagerDelegate = self;
+    [self.dataManager downloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -69,6 +70,12 @@
     
     return postCell;
     
+}
+
+#pragma mark - DataManager Delegate
+- (void)dataFinishedDownloading:(NSArray *)data {
+    self.posts = data;
+    [self.postsCollectionView reloadData];
 }
 
 @end

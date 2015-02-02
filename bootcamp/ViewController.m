@@ -11,7 +11,7 @@
 #import "CellItem.h"
 #import "DataManager.h"
 
-@interface ViewController ()
+@interface ViewController () <UICollectionViewDelegateFlowLayout>
     @property (strong, nonatomic) IBOutlet NSMutableArray *items;
     @property (strong, nonatomic) IBOutlet UICollectionView *myCollectionView;
 
@@ -107,10 +107,14 @@
     MyCollectionViewCell *cell = (MyCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     [cell LoadCell:cellItem.title withSubTitle:cellItem.subTitle withLeftImage:cellItem.leftImagePath withRightImage:cellItem.rightImagePath];
     
-    CALayer *cellLayer = cell.layer;
-    [cellLayer setBorderWidth:2.0f];
+//    CALayer *cellLayer = cell.layer;
+//    [cellLayer setBorderWidth:2.0f];
     
     return cell;
+}
+
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    return CGSizeMake(self.view.frame.size.width, 100);
 }
 
 @end

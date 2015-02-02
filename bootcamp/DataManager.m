@@ -18,36 +18,40 @@
 
 @implementation DataManager
 
--(NSArray *)downloadData {
-    NSDictionary *json = [[NSDictionary alloc]init];
+-(void)downloadData {
     
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://data.nasa.gov/api/get_search_results/?search=carbon+cycle"]];
-    
-//    __block NSDictionary *data;
-//    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-//        json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-//        
-//        NSLog(@"Async JSON: %@", json);
-//    }];
-    
-//    [[NSURLConnection alloc] initWithRequest:request delegate:self];
-    
-    
-    NSData *theData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-    
-    json = [NSJSONSerialization JSONObjectWithData:theData options:kNilOptions error:nil];
-    
-    return [self parseJson:json];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSDictionary *json = [[NSDictionary alloc]init];
+        
+        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://data.nasa.gov/api/get_search_results/?search=carbon+cycle"]];
+        
+        //    __block NSDictionary *data;
+        //    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        //        json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+        //
+        //        NSLog(@"Async JSON: %@", json);
+        //    }];
+        
+        //    [[NSURLConnection alloc] initWithRequest:request delegate:self];
+        
+        
+        NSData *theData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+        
+        json = [NSJSONSerialization JSONObjectWithData:theData options:kNilOptions error:nil];
+        
+        if (self.dataManagerDelegate && [self.dataManagerDelegate respondsToSelector:@selector(dataFinishedDownloading:)]) {
+            [self.dataManagerDelegate dataFinishedDownloading:[self parseJson:json]];
+        }
+    });
+
+
 }
 
 -(NSArray *) parseJson:(NSDictionary *)jsonData  {
     NSMutableArray *finalData = [[NSMutableArray alloc] init];
     
     self.totalPosts = (int)[jsonData objectForKey:@"count"];
-    
-    for (NSDictionary *data in jsonData) {
-        
-        NSArray *posts = [data objectForKey:@"posts"];
+    NSArray *posts = [jsonData objectForKey:@"posts"];
         
         if (posts.count > 0) {
             
@@ -56,10 +60,9 @@
                 BlogCellItem *blogCell = [[BlogCellItem alloc] init];
                 blogCell.title = [post objectForKey:@"title"];
                 
-                NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-                [dateFormatter setDateFormat:@"EE, d LLLL yyyy HH:mm:ss Z"];
+              
                 
-                blogCell.blogDate = [dateFormatter dateFromString:[post objectForKey:@"date"]];
+                blogCell.blogDate = [post objectForKey:@"date"];
                 blogCell.content = [post objectForKey:@"content"];
                 
                 NSArray *tags = [post objectForKey:@"tags"];
@@ -82,9 +85,6 @@
                 [finalData addObject:blogCell];
                 
             }
-            
-        }
-        
     }
     
     

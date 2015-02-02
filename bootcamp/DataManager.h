@@ -19,6 +19,6 @@
 
 @property (nonatomic, weak) id<DataManagerDelegate> dataManagerDelegate;
 @property int totalPosts;
--(NSArray *)downloadData;
+-(void)downloadData;
 
 @end

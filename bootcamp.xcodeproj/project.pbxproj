@@ -28,6 +28,8 @@
 		E76DD4291A7EB88F00CC7042 /* BlogCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E76DD4281A7EB88F00CC7042 /* BlogCellItem.m */; };
 		E76DD42F1A7EBEF600CC7042 /* PostsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E76DD42E1A7EBEF600CC7042 /* PostsCollectionViewCell.m */; };
 		E76DD4321A7F15AA00CC7042 /* PostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E76DD4311A7F15AA00CC7042 /* PostsViewController.m */; };
+		E79B12541A8029AD00B22B5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E76DD3BD1A79D1BC00CC7042 /* Main.storyboard */; };
+		E79B12551A8029CC00B22B5C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76DD3C21A79D1BC00CC7042 /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -300,11 +302,13 @@
 				E76DD41F1A7E1CCD00CC7042 /* font1.ttf in Resources */,
 				E76DD4201A7E1CCD00CC7042 /* font2.otf in Resources */,
 				E76DD4121A7E182000CC7042 /* peach.png in Resources */,
+				E79B12541A8029AD00B22B5C /* Main.storyboard in Resources */,
 				E76DD40A1A7E179200CC7042 /* grapes.png in Resources */,
 				E76DD4111A7E182000CC7042 /* chicken1.png in Resources */,
 				E76DD4101A7E182000CC7042 /* chicken.png in Resources */,
 				E76DD4051A7E159000CC7042 /* apple.png in Resources */,
 				E76DD4071A7E15CB00CC7042 /* apple1.png in Resources */,
+				E79B12551A8029CC00B22B5C /* LaunchScreen.xib in Resources */,
 				E76DD3C11A79D1BC00CC7042 /* Images.xcassets in Resources */,
 				E76DD4131A7E182000CC7042 /* peach1.png in Resources */,
 				E76DD40B1A7E179200CC7042 /* grapes1.png in Resources */,
